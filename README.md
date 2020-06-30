@@ -1,27 +1,41 @@
-# VoxeetDemo
+# [Dolby](https://dolby.io/) (Previously Voxeet) Angular Demo Application
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.0.0.
+This project was developed by [Abdul Maroof](https://www.linkedin.com/in/abdulmaroof)  using [Dolby - Built on top of WebRTC](https://dolby.io/developers/interactivity-apis/client-sdk/overview) (Voxeet) SDK for Javascript.
 
-## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Steps to Configure Project
+Download and install:
 
-## Code scaffolding
+    nodejs version 10 
+    npm version 6
+    WebStorm by Jetbrains
+    
+Open Project in WebStorm & Run:
+    
+    npm Install
+    
+After doing the above steps. Do the following to configure Dolby/Voxeet.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+1. Go to Dolby.io 
+2. Sign Up
+3. Go to Dashboard 
+4. Add new app    
+5. Copy the Consumer Key & Consumer Secret & replace it with existing keys in app.component.ts file
 
-## Build
+## Building for development & production
+### For Development
+Execute following command to run the project on development environment 
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+    npm run start
+ 
+Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files. 
 
-## Running unit tests
+### For Production
+Execute following command to build the project
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+    npm run build 
 
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
 
 ## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+To get more help on the Dolby go check out the [SDK](https://dolby.io/developers/interactivity-apis/client-sdk/overview).
